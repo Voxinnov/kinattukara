@@ -1,0 +1,78 @@
+.App {
+  min-height: 100vh;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom selection color */
+::selection {
+  background-color: #2E7D32;
+  color: #ffffff;
+}
+
+/* Hide scrollbar but keep functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom scrollbar for the site */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F1E8;
+}
+::-webkit-scrollbar-thumb {
+  background: #2E7D32;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1B5E20;
+}
+
+/* Leaf decorative animation */
+@keyframes gentle-sway {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+}
+.sway {
+  animation: gentle-sway 4s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+/* Ken Burns subtle effect for hero */
+@keyframes kenburns {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.08); }
+}
+.kenburns {
+  animation: kenburns 12s ease-out forwards;
+}
+
+/* Fade-in utility */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-up {
+  animation: fade-up 0.8s ease-out forwards;
+}
+
+/* Organic background pattern */
+.leaf-pattern {
+  background-image: radial-gradient(circle at 20% 30%, rgba(46, 125, 50, 0.04) 0%, transparent 40%),
+                    radial-gradient(circle at 80% 70%, rgba(109, 76, 65, 0.04) 0%, transparent 40%);
+}
+
+/* Serif accent font class */
+.font-display {
+  font-family: 'Fraunces', 'Playfair Display', Georgia, serif;
+  font-feature-settings: 'ss01', 'ss02';
+}
