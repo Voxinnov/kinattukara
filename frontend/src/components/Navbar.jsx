@@ -34,16 +34,16 @@ const Navbar = () => {
       </div>
 
       <header
-        className={`sticky top-0 z-50 transition-all duration-300 md:h-[124px] flex items-center ${
+        className={`sticky top-0 z-50 transition-all duration-300 flex flex-col justify-center lg:h-[124px] ${
           scrolled ? 'bg-cream/85 backdrop-blur-xl shadow-sm' : 'bg-cream'
         }`}
       >
-        <nav className="max-w-7xl mx-auto px-5 md:px-8 py-1 md:py-2 flex items-center justify-between w-full h-full">
-          <Link to="/" className="flex items-center relative z-10">
+        <nav className="max-w-7xl mx-auto px-5 md:px-8 py-3 lg:py-2 flex items-center justify-between w-full lg:h-full">
+          <Link to="/" className="flex items-center relative z-10 h-11">
             <img 
               src="/kinattukara-logo.png" 
               alt="Kinattukara Nursery" 
-              className="h-11 md:h-[160px] w-auto object-contain md:translate-y-6"
+              className="h-[90px] lg:h-[160px] w-auto object-contain translate-y-3 lg:translate-y-6"
             />
           </Link>
 
@@ -97,7 +97,7 @@ const Navbar = () => {
 
         <div
           className={`lg:hidden overflow-hidden transition-[max-height] duration-300 ${
-            isOpen ? 'max-h-[500px]' : 'max-h-0'
+            isOpen ? 'max-h-[600px]' : 'max-h-0'
           }`}
         >
           <ul className="px-5 pb-6 pt-2 flex flex-col gap-1 bg-cream border-t border-earth-200/60">
